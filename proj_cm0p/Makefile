@@ -7,7 +7,7 @@
 #
 ################################################################################
 # \copyright
-# Copyright 2022, Cypress Semiconductor Corporation (an Infineon company)
+# Copyright 2022-2023, Cypress Semiconductor Corporation (an Infineon company)
 # SPDX-License-Identifier: Apache-2.0
 # 
 # Licensed under the Apache License, Version 2.0 (the "License");
@@ -134,10 +134,12 @@ CY_GETLIBS_SHARED_PATH=../..
 #
 CY_GETLIBS_SHARED_NAME=mtb_shared
 
-# Absolute path to the compiler's "bin" directory.
-#
+# Absolute path to the compiler's "bin" directory. The variable name depends on the 
+# toolchain used for the build. Refer to the ModusToolbox user guide to get the correct
+# variable name for the toolchain used in your build.
+# 
 # The default depends on the selected TOOLCHAIN (GCC_ARM uses the ModusToolbox
-# IDE provided compiler by default).
-CY_COMPILER_PATH=
+# software provided compiler by default).
+CY_COMPILER_GCC_ARM_DIR=
 
 include $(CY_TOOLS_DIR)/make/start.mk
